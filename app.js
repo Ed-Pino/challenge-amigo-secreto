@@ -1,5 +1,4 @@
 // app.js
-
 // Array para almacenar los nombres de los participantes
 let participants = [];
 
@@ -16,7 +15,7 @@ function agregarAmigo() {
     participantNameInput.value = ""; //limpiar el input
     updateParticipantList();
   } else {
-    alert("Please enter a valid name.");
+    alert("Por favor ingrese el nombre del participante.");
   }
 }
 
@@ -33,7 +32,7 @@ function updateParticipantList() {
 // Funccion para realizar el sorteo
 function sortearAmigo() {
     if (participants.length < 2) {
-        alert("You need at least two participants for the draw.");
+        alert("Nesecitas al menos 2 participantes pare jugar.");
         return;
     }
 

@@ -46,7 +46,7 @@ function sortearAmigo() {
   // 2. crear las parejas
     const assignments = {};
     for (let i = 0; i < participants.length; i++) {
-       // The person at index i gets paired with the person at index i + 1.  If we're at the end, we wrap around.
+       //La persona en el index i le da regalo a la persona en el index i + 1. Si estamos al final,le da regalo a la persona en el index 0
         assignments[participants[i]] = shuffledParticipants[(i + 1) % participants.length];
     }
 
